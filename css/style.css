@@ -1,0 +1,45 @@
+body {
+   font-family: 'Orbitron';
+   font-weight: 400;
+}
+h1 {
+   font-size: 52px;
+   line-height: 64px;
+   text-transform: capitalize;
+   color: #FFFFFF;
+}
+a:hover {
+   color: #57B8FF;
+}
+.navbar, .frame-1 {
+   background: linear-gradient(to right, black 54%, #57B8FF 46%);
+}
+.nav-item a:hover {
+   color: #FAC422;
+}
+.text-verical {
+   writing-mode: vertical-rl;
+   transform: rotate(-180deg);
+   font-size: 11px;
+   line-height: 25px;
+   color: #80858F;
+   text-decoration: none;
+}
+.text-blue {
+   font-size: 13px;
+   line-height: 13px;
+   text-transform: uppercase;
+   color: #57B8FF;
+}
+.text {
+   font-size: 18px;
+   line-height: 28px;
+   color: #999999;
+}
+.white-text {
+   text-decoration: none;
+   color: white;
+}
+.btm-blue {
+   background-color: #57B8FF;
+}
