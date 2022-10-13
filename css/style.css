@@ -3,9 +3,15 @@ body {
    font-weight: 400;
    background-color: black;
 }
+li {
+   list-style-type: none;
+}
+a {
+   text-decoration: none;
+}
 h1 {
    font-size: 52px;
-   line-height: 64px;
+   line-height: 60px;
    text-transform: capitalize;
    color: #FFFFFF;
 }
@@ -15,7 +21,7 @@ h2 {
    text-transform: capitalize;
    color: #FFFFFF;
 }
-h4 {
+h4, .frame-7 a {
    font-size: 24px;
    line-height: 32px;
    text-transform: capitalize;
@@ -42,8 +48,38 @@ a:hover {
    background-color: #fdbf04;
    transition: all 0.25s;
 }
+.frame-5 {
+   background-color: #2A313C;
+}
+.frame-5 .col-sm-4 img:hover {
+   border: 5px solid #3B3D46;
+   border-radius: 20px;
+   transition: all 0.10s;
+}
+.frame-6 .img-f-1 {
+   background-image: url(../img/image1-frame-6.png);
+}
+.frame-6 .img-f-2 {
+   background-image: url(../img/image2-frame-6.png);
+}
+.frame-6 .img-f-3 {
+   background-image: url(../img/image3-frame-6.png);
+}
+.frame-8 {
+   background-image: url(../img/image-frame-8.png);
+   width: 100%;
+   min-height: 683px;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.footer {
+   background-color: #222730;
+}
 .nav-item a:hover {
    color: #FAC422;
+}
+.frame-6 .img-f-1:hover, .frame-6 .img-f-2:hover, .frame-6 .img-f-3:hover {
+   opacity: 70%;
 }
 .text-verical {
    writing-mode: vertical-rl;
@@ -51,7 +87,6 @@ a:hover {
    font-size: 11px;
    line-height: 25px;
    color: #80858F;
-   text-decoration: none;
 }
 .text-blue {
    font-size: 13px;
@@ -73,8 +108,18 @@ a:hover {
    max-width: 470px;
 }
 .white-text {
-   text-decoration: none;
    color: white;
+}
+.text-small {
+   font-size: 12px;
+   line-height: 25px;
+   color: #999999;
+}
+.title-footer {
+   font-size: 15px;
+   line-height: 30px;
+   text-transform: capitalize;
+   color: #FFFFFF;
 }
 .btm-blue {
    background-color: #57B8FF;
@@ -83,7 +128,6 @@ a:hover {
    background-color: rgba(255, 255, 255, 0.15);
    border-radius: 20px;
 }
-
 @media screen and (max-width:985px) {
    .text-verical {
       writing-mode: horizontal-tb;
@@ -92,5 +136,8 @@ a:hover {
    }
    .frame-3 {
       background-image: url(../img/image-frame-3-big.png);
+   }
+   .frame-8 {
+      background-image: url(../img/image-frame-8-big.png);
    }
 }
