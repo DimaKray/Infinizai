@@ -1,10 +1,23 @@
 body {
    font-family: 'Orbitron';
    font-weight: 400;
+   background-color: black;
 }
 h1 {
    font-size: 52px;
    line-height: 64px;
+   text-transform: capitalize;
+   color: #FFFFFF;
+}
+h2 {
+   font-size: 48px;
+   line-height: 52px;
+   text-transform: capitalize;
+   color: #FFFFFF;
+}
+h4 {
+   font-size: 24px;
+   line-height: 32px;
    text-transform: capitalize;
    color: #FFFFFF;
 }
@@ -13,6 +26,21 @@ a:hover {
 }
 .navbar, .frame-1 {
    background: linear-gradient(to right, black 54%, #57B8FF 46%);
+}
+.frame-2 {
+   background-color: #FDD04A;
+}
+.frame-3 {
+   background-image: url(../img/image-frame-3.png);
+   width: 100%;
+   min-height: 980px;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.frame-2 img:hover {
+   border-radius: 13px;
+   background-color: #fdbf04;
+   transition: all 0.25s;
 }
 .nav-item a:hover {
    color: #FAC422;
@@ -32,9 +60,17 @@ a:hover {
    color: #57B8FF;
 }
 .text {
-   font-size: 18px;
+   font-size: 16px;
    line-height: 28px;
    color: #999999;
+}
+.text-big {
+   font-size: 18px;
+   line-height: 28px;
+   color: rgba(223, 223, 223, 0.8);
+}
+.col-sm-6 .text-big {
+   max-width: 470px;
 }
 .white-text {
    text-decoration: none;
@@ -42,4 +78,19 @@ a:hover {
 }
 .btm-blue {
    background-color: #57B8FF;
+}
+.frame-3-box {
+   background-color: rgba(255, 255, 255, 0.15);
+   border-radius: 20px;
+}
+
+@media screen and (max-width:985px) {
+   .text-verical {
+      writing-mode: horizontal-tb;
+      transform: rotate(0deg);
+      flex: 1 1 auto;
+   }
+   .frame-3 {
+      background-image: url(../img/image-frame-3-big.png);
+   }
 }
